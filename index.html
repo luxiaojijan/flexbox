@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>power by 多火工作室</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Flexbox</h1>
+					<h3>更加优雅的布局</h3>
+					<p>
+						<small>Created by <a href="http://luxiaojian.me/">卢小健</a> / <a href="http://weibo.com/luhuijian">@_杂烩乱炖</a></small>
+					</p>
+				</section>
+
+				<section >
+					<h4>1.能解决什么问题？</h4>
+					<h4>2.能用在哪里，哪些地方可以用？</h4>
+					<h4>3.为什么能用，它的实现逻辑？</h4>
+				</section>
+
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h1>这能够做什么？</h1>
+				</section>
+				<section>
+					<h3>绝对置中</h3>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+				    ###`transform center`
+				    ```
+				        .container{
+							position: relative;
+						}
+						.item{
+							position: absolute;
+							top:50%;
+							left:50%;
+							transform: translate(-50%, -50%);
+						}
+					```
+				    </script>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+				    ![](http://i2.tietuku.com/ed2a002c34c7e51a.jpg)
+				    </script>
+				</section>
+				<section>
+					<h3>flexbox</h3>
+					<p data-height="480" data-theme-id="13222" data-slug-hash="LEMmjK" data-default-tab="result" data-user="luxiaojijan" class='codepen'>See the Pen <a href='http://codepen.io/luxiaojijan/pen/LEMmjK/'>perfectly center</a> by 卢小健 (<a href='http://codepen.io/luxiaojijan'>@luxiaojijan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+					<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+				</section>
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<img src="http://i2.tietuku.com/83f898f039ca7c9e.png" alt="">
+					</section>
+					<section>
+						<img src="http://i2.tietuku.com/f0edde7d98cddd1c.png" alt="">
+					</section>
+					<section>
+						<p data-height="800" data-theme-id="13222" data-slug-hash="vEQbEZ" data-default-tab="result" data-user="luxiaojijan" class='codepen'>See the Pen <a href='http://codepen.io/luxiaojijan/pen/vEQbEZ/'>vEQbEZ</a> by 卢小健 (<a href='http://codepen.io/luxiaojijan'>@luxiaojijan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</section>
+				</section>
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h2>能用在哪里？浏览器兼容</h2>
+				</section>
+				<section>
+					<h2>W3C.ORG</h2>
+					<img src="http://i3.tietuku.com/51875e979cc22ac8.jpg" alt="兼容">
+				</section>
+				<section>
+					<h2>can i use</h2>
+					<img src="http://i2.tietuku.com/56888f9607312073.png" alt="兼容">
+				</section>
+				<section>
+					<section>
+						<img src="http://i3.tietuku.com/437fc9f3091ed09e.jpg" alt="兼容">
+					</section>
+					<section>
+						<img src="http://i3.tietuku.com/57c413e4445ec4f3.jpg" alt="兼容">
+					</section>
+				</section>
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h2>实现逻辑</h2>
+				</section>
+				<section>
+					<section data-markdown>
+					    <script type="text/template">
+					    ##`flex box`  
+					    ![](http://i3.tietuku.com/ef4f455aefb8ee4b.png)
+					    </script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					    ##`flex`  
+					    ![](http://i3.tietuku.com/5422a6b2d97ffe66.jpg)
+					    </script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					    ##`flex`  
+					    ![](http://i3.tietuku.com/5422a6b2d97ffe66.jpg)
+					    </script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					    >`flex`是`flex-grow`,`flex-shrink`,`flex-basis`的缩写形式。
+
+					    ![](http://i3.tietuku.com/ada34dbfafb8b8d9.jpg)
+					    </script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					    ##flex-basis  
+					    ####flex-basis可以理解为我们给子元素设置的宽度。
+					    ![](http://i3.tietuku.com/3115cdf9685c32af.jpg)
+					    </script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					    ##flex-grow和flex-shrink  
+					    ####`grow`和`shrink`是一对双胞胎，grow在flex容器下的子元素的宽度和比容器和小的时候起作用。 grow定义了子元素的宽度增长因子，容器中除去子元素之和剩下的宽度会按照各个子元素的gorw值进行平分加大各个子元素上。
+					    </script>
+					</section>
+
+					<section data-markdown>
+					    <script type="text/template">
+					   	1.计算容器还剩空间  
+					   	  
+					   	  available_space(容器还剩的空间）=container_size(容器宽度)-flex_item_total(子元素宽度之和)  
+					   	  
+					   	  2.计算增长单位  
+					   	  
+					   	  grow_unit(增长单位)=available_space/flex_grow_total(子元素增长因子之和)
+					   	  
+					   	  3.得到子元素的宽度  
+					   	  
+					   	  flex_item_width(子元素计算得到的宽度)=flex_basis+grow_unit*flex_grow
+					    </script>
+					</section>
+
+					<section>
+						<p data-height="368" data-theme-id="13222" data-slug-hash="pvQZoy" data-default-tab="result" data-user="luxiaojijan" class='codepen'>See the Pen <a href='http://codepen.io/luxiaojijan/pen/pvQZoy/'>pvQZoy</a> by 卢小健 (<a href='http://codepen.io/luxiaojijan'>@luxiaojijan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					   	container_size=480px;  flex_item_total=100*3=300px;flex_grow_total=3+2+1=6
+
+					   	available_space=480-300=180px;  
+
+					   	grow_unit=180/6=30px;  
+
+					   	子元素1的宽度为：  
+					   	flex_item_width1=100+3*30=190px;  
+					   	子元素2的宽度为：  
+					   	flex_item_width1=100+2*30=160px;  
+					   	子元素3的宽度为：  
+					   	flex_item_width1=100+30=130px; 
+					    </script>
+					</section>
+					<section>
+						<p>`shrink`则是在宽度和比容器宽度大时候，才有用。按照shrink的值减去相应大小得到子元素的值。<p>
+					</section>
+					<section>
+						<h2>公式：  overflow_space(溢出的宽度)</h2>
+						<ol>
+							<li class="fragment"><strong>1.计算溢出的宽度</strong></li>
+							<li class="fragment"><code>overflow_space=flex_item_total(子元素basis宽度之和)-container_width(容器宽度) </code></li>
+							<li class="fragment"><strong>2.得到计算的子元素的宽度</strong></li>
+							<li class="fragment"><code>item_basis:子元素设置的flex-basis；item_shrink:子元素的flex_shrink；item_shrink_sum:所有子元素flex_shrink的和。</code></li>
+							<li class="fragment"><code>flex_item_width(计算的子元素的宽度)=item_basis-(overflow_space*(item_shrink/item_shrink_sum))</code></li>
+						</ol>
+					</section>
+					<section>
+						<p data-height="368" data-theme-id="13222" data-slug-hash="GgPOJw" data-default-tab="result" data-user="luxiaojijan" class='codepen'>See the Pen <a href='http://codepen.io/luxiaojijan/pen/GgPOJw/'>flex-shrink</a> by 卢小健 (<a href='http://codepen.io/luxiaojijan'>@luxiaojijan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					   	**例子**  
+					   	container_width=480px; item_shrink分别为3，2，1.item_basis=200px;  overflow_space=120px;
+					   	则：  
+					   	flex_item1_width=200-(120*(3/6))=140px;   
+					   	flex_item2_width=200-(120*(2/6))=160px;  
+					   	flex_item3_width=200-(120*(1/6))=180px; 
+					    </script>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>align-content</h2>
+						<p data-height="368" data-theme-id="13222" data-slug-hash="wBRebG" data-default-tab="result" data-user="luxiaojijan" class='codepen'>See the Pen <a href='http://codepen.io/luxiaojijan/pen/wBRebG/'>align-content demo</a> by 卢小健 (<a href='http://codepen.io/luxiaojijan'>@luxiaojijan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					    >对单行和单列不起作用，多行时才有效，需设置`flex-direction:row;flex-wrap:wrap;`或者`flex-flow:row-wrap`
+					   	* flex-start:行填充到容器的开始。
+					   	* flex-bottom:行填充到容器的结束。
+					   	* center:行居中分布
+					   	* space-between:行平均分布，第一行在容器开始，最后一行在容器结束。
+					   	* space-around:行平均分布，但行与行之间有空隙。
+					    </script>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>align-items</h2>
+						<p data-height="368" data-theme-id="13222" data-slug-hash="ZYVJeR" data-default-tab="result" data-user="luxiaojijan" class='codepen'>See the Pen <a href='http://codepen.io/luxiaojijan/pen/ZYVJeR/'>align items demo</a> by 卢小健 (<a href='http://codepen.io/luxiaojijan'>@luxiaojijan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					    >用于当前行中的子元素进行对齐布局。
+					   	* flex-start: 子元素的上边缘对齐到行的上边缘。
+					   	* flex-end: 子元素的上边缘对齐到行的下边缘。
+					   	* center: 以中轴线居中。
+					   	* baseline: 子元素的基线对齐。
+					   	* stretch:子元素拉伸至充满容器。
+					    </script>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>align-self</h2>
+						<p data-height="368" data-theme-id="13222" data-slug-hash="gbZxRM" data-default-tab="result" data-user="luxiaojijan" class='codepen'>See the Pen <a href='http://codepen.io/luxiaojijan/pen/gbZxRM/'>align-self demo</a> by 卢小健 (<a href='http://codepen.io/luxiaojijan'>@luxiaojijan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					    >应用在子元素上，可以覆盖`align-item`来获得特殊的元素对齐。
+					   	* flex-start: 子元素的上边缘对齐到行的上边缘。
+					   	* flex-end: 子元素的上边缘对齐到行的下边缘。
+					   	* center: 以中轴线居中。
+					   	* baseline: 子元素的基线对齐。
+					   	* stretch:子元素拉伸至充满容器。
+					    </script>
+					</section>
+					<section>
+						<h3>一个覆盖align-item的例子</h3>
+						<p data-height="368" data-theme-id="13222" data-slug-hash="MYZvoX" data-default-tab="result" data-user="luxiaojijan" class='codepen'>See the Pen <a href='http://codepen.io/luxiaojijan/pen/MYZvoX/'>MYZvoX</a> by 卢小健 (<a href='http://codepen.io/luxiaojijan'>@luxiaojijan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>justify-content</h2>
+						<p data-height="480" data-theme-id="13222" data-slug-hash="KwbRJe" data-default-tab="result" data-user="luxiaojijan" class='codepen'>See the Pen <a href='http://codepen.io/luxiaojijan/pen/KwbRJe/'>justify-content</a> by 卢小健 (<a href='http://codepen.io/luxiaojijan'>@luxiaojijan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					    >水平方向上的元素对齐。
+					   	* flex-start: 子元素的左边缘对齐到行的左边缘。
+					   	* flex-end: 子元素的右边缘对齐到行的右边缘。
+					   	* center:行居中分布
+					   	* space-between:行平均分布，第一在容器左边，最后一在容器右边。
+					   	* space-around:行平均分布，子元素之间有空隙。
+					    </script>
+					</section>
+				</section>
+				<section>
+					<img src="http://i2.tietuku.com/103986ed4974d7b4.jpg" alt="">
+				</section>
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
